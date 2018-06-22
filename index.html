@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Crystal Collector</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="/assets/reset.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="/assets/style.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery.js"></script>
 
@@ -15,7 +15,7 @@
 <body> 
     <div class="container border bg-warning">
         <div class="row">
-            <h2>Crystals Collector!</h2>
+            <h2>Crystal Collector!</h2>
         </div>
     </div>
     
@@ -29,7 +29,8 @@
         </div>
     </div>
 
-    <div class= "container border bg-success">
+    <div class= "container border bg-primary">
+        <div>Need to win</div>
         <div id="wantedScore"></div>
     </div>
 
@@ -47,19 +48,21 @@
     </div>
     
     <div class="container">
-            <img src="assets/images/red.jpg" class="crystal" style="width:100px" height="100px"> 
-            <img src="assets/images/blue.jpg" class="crystal" style="width:100px" height="100px">         
-            <img src="assets/images/yellow.jpg" class="crystal" style="width:100px" height="100px">
-            <img src="assets/images/green.jpg" class="crystal" style="width:100px" height="100px">
+            <img src="assets/images/red.jpg" class="crystal rounded-circle border border-dark" style="width:100px" height="100px"> 
+            <img src="assets/images/blue.jpg" class="crystal rounded-circle border border-dark" style="width:100px" height="100px">         
+            <img src="assets/images/yellow.jpg" class="crystal rounded-circle border border-dark" style="width:100px" height="100px">
+            <img src="assets/images/green.jpg" class="crystal rounded-circle border border-dark" style="width:100px" height="100px">
     </div>
 
     <div class="container bg-primary">
-        <div id="yourScore">Your Score: </div>
-       
+        <div>Your Score</div>
+        <div id="yourScore"></div>
+    </div>
+
+    <div class="container">
+        <button type="button" class="btn btn-secondary newGame mt-5 bg-danger">New Game</button>
     </div>
         
-            
-        </div>
         <script type="text/javascript" src="assets/javascript/game.js"></script>    
     </body>
 </html>

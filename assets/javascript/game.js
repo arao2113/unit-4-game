@@ -42,6 +42,7 @@ $(document).ready(function() {
             gameOver = true;
             wins++;
             $('#wins').html(wins);
+            $
         };
 
         if (yourScore > wantedScore) {
@@ -51,7 +52,9 @@ $(document).ready(function() {
         };
     });
 
-    
+    $('.newGame').on('click', function() {
+        newGame();
+    })
 
     
 
